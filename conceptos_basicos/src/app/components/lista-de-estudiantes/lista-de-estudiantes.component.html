@@ -1,0 +1,12 @@
+
+<div class="container">
+<app-estudiante *ngFor="let estudiante of listaEstudiantes"
+(enviarInstruccionDePromocion)="recibirEstudiantePromovido($event)"
+[estudiante]="estudiante">
+</app-estudiante>
+</div>
+
+
+
+
+

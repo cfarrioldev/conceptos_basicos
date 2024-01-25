@@ -1,0 +1,12 @@
+<div class="info-container">
+  <p class="nombre">Nombre: {{estudiante.nombre}}</p>
+  <p class="curso">Curso: {{estudiante.curso}}</p>
+  <p class="edad">Edad: {{estudiante.edad}} años</p>
+  <p class="promedio">Promedio: {{estudiante.promedio}}</p>
+  <p *ngIf="estudiante.promovido;">Alumno promovido al siguiente año</p>
+  <button [disabled]="estudiante.promovido" (click)="promoverAlumno(estudiante)">
+    Promover al siguiente año
+  </button>
+</div>
+
+
